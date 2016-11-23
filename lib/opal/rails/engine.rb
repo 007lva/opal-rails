@@ -27,7 +27,7 @@ module Opal
       end
 
       config.after_initialize do |app|
-        require 'opal/rails/haml_filter' if defined?(Haml)
+        require 'opal/rails/hamlit_filter' if defined?(Haml)
         require 'opal/rails/slim_filter' if defined?(Slim)
 
         config = app.config
